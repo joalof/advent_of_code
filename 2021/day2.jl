@@ -4,7 +4,6 @@ mutable struct Submarine
     aim::Int
 end
 
-
 function execute_simple!(submarine::Submarine, instruction::Tuple{String, Int})
     name, value = instruction
     if name == "forward"
