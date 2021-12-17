@@ -5,7 +5,6 @@ data = np.loadtxt('input_day3.txt', dtype=str)
 bits = np.array([np.fromstring(' '.join(row), sep=' ', dtype=int) for row in data])
 
 # Part I
-nrows = bits.shape[0]
 gamma = np.sum(bits, axis=0) > 0.5*bits.shape[0]
 epsilon = ~gamma
 gamma = int(''.join(gamma.astype(int).astype(str)), 2)
