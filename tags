@@ -1,0 +1,467 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	//
+AdvancedParser	2020/day18.py	/^class AdvancedParser(BaseParser):$/;"	c	inherits:BaseParser	access:public
+Advent of Code	README.md	/^Advent of Code$/;"	c
+BaseParser	2020/day18.py	/^class BaseParser(abc.ABC):$/;"	c	inherits:abc.ABC	access:public
+BasinFinder	2021/day9.py	/^class BasinFinder:$/;"	c	inherits:	access:public
+Board	2021/day4.py	/^class Board:$/;"	c	inherits:	access:public
+CaveSystem	2021/day12.py	/^class CaveSystem:$/;"	c	inherits:	access:public
+Decoder	2021/day16.py	/^class Decoder:$/;"	c	inherits:	access:public
+Evaluator	2021/day16.py	/^class Evaluator:$/;"	c	inherits:	access:public
+Explorer	2021/day12.py	/^class Explorer:$/;"	c	inherits:	access:public
+Interpreter	2020/day8.py	/^class Interpreter:$/;"	c	inherits:	access:public
+LiteralPacket	2021/day16.py	/^class LiteralPacket(Packet):$/;"	c	inherits:Packet	access:public
+Node	2020/day18.py	/^class Node:$/;"	c	inherits:	access:public
+OPERATIONS	2021/day16.py	/^    OPERATIONS = {$/;"	v	class:Evaluator	access:public
+ORIENTATIONS	2020/day12.py	/^    ORIENTATIONS = {"N": 0, "E": 1, "S": 2, "W": 3}$/;"	v	class:Ship	access:public
+OctopusGrid	2021/day11.py	/^class OctopusGrid:$/;"	c	inherits:	access:public
+OctopusGrid	2021/day11_alt.py	/^class OctopusGrid:$/;"	c	inherits:	access:public
+OperatorPacket	2021/day16.py	/^class OperatorPacket(Packet):$/;"	c	inherits:Packet	access:public
+Packet	2021/day16.py	/^class Packet:$/;"	c	inherits:	access:public
+Pathfinder	2021/day15.py	/^class Pathfinder:$/;"	c	inherits:	access:public
+ROT90	2020/day12.py	/^    ROT90 = np.array([[0, -1], [1, 0]])$/;"	v	class:Ship	access:public
+Ship	2020/day12.py	/^class Ship:$/;"	c	inherits:	access:public
+SimpleParser	2020/day18.py	/^class SimpleParser(BaseParser):$/;"	c	inherits:BaseParser	access:public
+SnailNumber	2021/day18.py	/^class SnailNumber:$/;"	c	inherits:	access:public
+SyntaxChecker	2021/day10.py	/^class SyntaxChecker:$/;"	c	inherits:	access:public
+__call__	2021/day16.py	/^    def __call__(self, packet):$/;"	m	class:Evaluator	access:public	signature:(self, packet)
+__eq__	2021/day18.py	/^    def __eq__(self, other):$/;"	m	class:SnailNumber	access:public	signature:(self, other)
+__init__	2020/day12.py	/^    def __init__(self, pos=[0, 0], pos_waypoint=[10, 1], orientation=1):$/;"	m	class:Ship	access:public	signature:(self, pos=[0, 0], pos_waypoint=[10, 1], orientation=1)
+__init__	2020/day18.py	/^    def __init__(self):$/;"	m	class:BaseParser	access:public	signature:(self)
+__init__	2020/day18.py	/^    def __init__(self, left, right, name):$/;"	m	class:Node	access:public	signature:(self, left, right, name)
+__init__	2020/day8.py	/^    def __init__(self):$/;"	m	class:Interpreter	access:public	signature:(self)
+__init__	2021/day10.py	/^    def __init__(self):$/;"	m	class:SyntaxChecker	access:public	signature:(self)
+__init__	2021/day11.py	/^    def __init__(self, grid):$/;"	m	class:OctopusGrid	access:public	signature:(self, grid)
+__init__	2021/day11_alt.py	/^    def __init__(self, grid):$/;"	m	class:OctopusGrid	access:public	signature:(self, grid)
+__init__	2021/day12.py	/^    def __init__(self, connections_raw):$/;"	m	class:CaveSystem	access:public	signature:(self, connections_raw)
+__init__	2021/day15.py	/^    def __init__(self, density):$/;"	m	class:Pathfinder	access:public	signature:(self, density)
+__init__	2021/day16.py	/^    def __init__(self, transmission):$/;"	m	class:Decoder	access:public	signature:(self, transmission)
+__init__	2021/day18.py	/^    def __init__(self, data):$/;"	m	class:SnailNumber	access:public	signature:(self, data)
+__init__	2021/day4.py	/^    def __init__(self, data):$/;"	m	class:Board	access:public	signature:(self, data)
+__init__	2021/day9.py	/^    def __init__(self, heights):$/;"	m	class:BasinFinder	access:public	signature:(self, heights)
+__len__	2021/day16.py	/^    def __len__(self):$/;"	m	class:LiteralPacket	access:public	signature:(self)
+__len__	2021/day16.py	/^    def __len__(self):$/;"	m	class:OperatorPacket	access:public	signature:(self)
+__repr__	2021/day18.py	/^    def __repr__(self):$/;"	m	class:SnailNumber	access:public	signature:(self)
+__str__	2020/day18.py	/^    def __str__(self, node=None):$/;"	m	class:Node	access:public	signature:(self, node=None)
+_diag_view	2020/day11.py	/^def _diag_view(arr, i, j, view="top right"):$/;"	f	access:protected	signature:(arr, i, j, view="top right")
+_execute_next	2020/day8.py	/^    def _execute_next(self):$/;"	m	class:Interpreter	access:protected	signature:(self)
+_first_visible	2020/day11.py	/^def _first_visible(ray):$/;"	f	access:protected	signature:(ray)
+_flash	2021/day11.py	/^    def _flash(self, i, j):$/;"	m	class:OctopusGrid	access:protected	signature:(self, i, j)
+_get_borders	2020/day20.py	/^def _get_borders(tiles, key):$/;"	f	access:protected	signature:(tiles, key)
+_inbounds	2021/day11.py	/^    def _inbounds(self, i, j):$/;"	m	class:OctopusGrid	access:protected	signature:(self, i, j)
+_match_borders	2020/day20.py	/^def _match_borders(borders1, borders2):$/;"	f	access:protected	signature:(borders1, borders2)
+a	2021/day18.py	/^    a = SnailNumber({1: 1, 2: 1})$/;"	v	access:public
+acc	2020/day8.py	/^    def acc(self, num):$/;"	m	class:Interpreter	access:public	signature:(self, num)
+accept	2020/day18.py	/^    def accept(self, c):$/;"	m	class:BaseParser	access:public	signature:(self, c)
+adapters	2020/day10.py	/^adapters = np.concatenate(([0], np.sort(adapters), [np.max(adapters) + 3]))$/;"	v	access:public
+adapters	2020/day10.py	/^adapters = np.loadtxt('.\/input_day10.txt', dtype=np.int64)$/;"	v	access:public
+addr_pad	2020/day14.py	/^            addr_pad = np.array(list(format(addr, "036b")))$/;"	v	access:public
+all_invalid_fields	2020/day16.py	/^    all_invalid_fields = []$/;"	v	access:public
+allergens	2020/day21.py	/^    allergens = sorted(list(set.union(*foods_allergens)))$/;"	v	access:public
+answer_groups	2020/day6.py	/^    answer_groups = load_input()$/;"	v	access:public
+apply_rules	2020/day11.py	/^def apply_rules(seats, proximity_func, tol):$/;"	f	access:public	signature:(seats, proximity_func, tol)
+arr	2020/day1.py	/^    arr = np.loadtxt("input.txt", dtype=np.int64)$/;"	v	access:public
+arr	2020/day9.py	/^    arr = np.loadtxt('.\/input_day9.txt', dtype=np.int64)$/;"	v	access:public
+attempt_match	2020/day19.py	/^def attempt_match(message, reg31, reg42):$/;"	f	access:public	signature:(message, reg31, reg42)
+b	2021/day18.py	/^    b = SnailNumber({3: 2, 4: 2, 5: 1})$/;"	v	access:public
+bag_rules	2020/day7.py	/^    bag_rules = parse_input()$/;"	v	access:public
+bags	2020/day7.py	/^    bags = list(bag_rules.keys())$/;"	v	access:public
+basin_finder	2021/day9.py	/^    basin_finder = BasinFinder(heights)$/;"	v	access:public
+bingo_seq	2021/day4.py	/^    bingo_seq = iter(bingo_seq)$/;"	v	access:public
+bingo_seq	2021/day4.py	/^    bingo_seq, board_data = parse_input()$/;"	v	access:public
+bits	2021/day3.py	/^bits = np.array([np.fromstring(' '.join(row), sep=' ', dtype=int) for row in data])$/;"	v	access:public
+bits_sel	2021/day3.py	/^        bits_sel = bits_sel[bits_sel[:, j] == mask[j]]$/;"	v	access:public
+bits_sel	2021/day3.py	/^    bits_sel = bits.copy()$/;"	v	access:public
+board_data	2021/day4.py	/^    bingo_seq, board_data = parse_input()$/;"	v	access:public
+boards	2021/day4.py	/^    boards = [Board(data) for data in board_data]$/;"	v	access:public
+bounds	2020/day16.py	/^        bounds = rules[name]$/;"	v	access:public
+bounds	2021/day7.py	/^    bounds = np.array([0., np.max(x_crabs)])$/;"	v	access:public
+box	2021/day17.py	/^    box = np.array([[20, 30], [-10, -5]])$/;"	v	access:public
+btree	2020/day7.py	/^    btree = csgraph.breadth_first_tree(g.T, bags.index('shiny gold'))$/;"	v	access:public
+build_image	2020/day20.py	/^def build_image(tiles, tiles_ordered, binary=True, spaced=False, skip_borders=True):$/;"	f	access:public	signature:(tiles, tiles_ordered, binary=True, spaced=False, skip_borders=True)
+busses	2020/day13.py	/^    busses = np.array([int(t) for t in t_schedule if t != "x"])$/;"	v	access:public
+c	2021/day18.py	/^    c = SnailNumber.from_expression('[[3,4],5]')$/;"	v	access:public
+calc_risk_level	2021/day9.py	/^    def calc_risk_level(self):$/;"	m	class:BasinFinder	access:public	signature:(self)
+calc_score	2020/day22.py	/^def calc_score(deck):$/;"	f	access:public	signature:(deck)
+canonical_list	2020/day21.py	/^    canonical_list = ",".join([v.pop() for v in matches.values()])$/;"	v	access:public
+cardinal_coords	2020/day24.py	/^    cardinal_coords = {$/;"	v	access:public
+check_hit	2021/day17.py	/^def check_hit(v, box, num_steps=50):$/;"	f	access:public	signature:(v, box, num_steps=50)
+check_line	2021/day10.py	/^    def check_line(self, line):$/;"	m	class:SyntaxChecker	access:public	signature:(self, line)
+checker	2021/day10.py	/^    checker = SyntaxChecker()$/;"	v	access:public
+cmax	2020/day23.py	/^    cmax = max(cups_init)$/;"	v	access:public
+col	2020/day16.py	/^            col = valid_tickets[:, icol]$/;"	v	access:public
+color	2020/day24.py	/^                color = tiles[x]$/;"	v	access:public
+color	2020/day24.py	/^            color = tiles[x]$/;"	v	access:public
+common	2020/day6.py	/^        common = set.intersection(*[set(ans) for ans in group])$/;"	v	access:public
+completion_scores	2021/day10.py	/^    completion_scores = {')': 1, ']': 2, '}': 3, '>': 4}$/;"	v	class:SyntaxChecker	access:public
+condition1	2021/day12.py	/^    def condition1(self, explorer, node):$/;"	m	class:CaveSystem	access:public	signature:(self, explorer, node)
+condition2	2021/day12.py	/^    def condition2(self, explorer, node):$/;"	m	class:CaveSystem	access:public	signature:(self, explorer, node)
+connections_raw	2021/day12.py	/^    connections_raw = parse_input(".\/input_day12.txt")$/;"	v	access:public
+coords	2021/day13.py	/^    coords, instructions = parse_input('.\/input_day13.txt')$/;"	v	access:public
+cost1	2021/day7.py	/^def cost1(x_target, x_crabs):$/;"	f	access:public	signature:(x_target, x_crabs)
+cost2	2021/day7.py	/^def cost2(x_target, x_crabs):$/;"	f	access:public	signature:(x_target, x_crabs)
+count	2020/day19.py	/^    count = 0$/;"	v	access:public
+count	2020/day21.py	/^    count = 0$/;"	v	access:public
+count	2020/day24.py	/^                count = sum([tiles.get(x_n, 0) for x_n in x_neighbors])$/;"	v	access:public
+count	2020/day24.py	/^            count = 0$/;"	v	access:public
+count	2020/day6.py	/^    count = 0$/;"	v	access:public
+count	2020/day6.py	/^    count = sum([len(set(''.join(group))) for group in answer_groups])$/;"	v	access:public
+count	2021/day1.py	/^count = 0$/;"	v	access:public
+count	2021/day1.py	/^count = np.sum(np.diff(depths) > 0)$/;"	v	access:public
+count	2021/day17.py	/^    count = 0$/;"	v	access:public
+count1	2020/day10.py	/^count1 = (diffs == 1).sum()$/;"	v	access:public
+count3	2020/day10.py	/^count3 = (diffs == 3).sum()$/;"	v	access:public
+count_bags	2020/day7.py	/^def count_bags(graph, irow):$/;"	f	access:public	signature:(graph, irow)
+count_trees	2020/day3.py	/^def count_trees(input_file, slopes):$/;"	f	access:public	signature:(input_file, slopes)
+counter	2021/day14.py	/^        counter = Counter([template[i: i + 2] for i in range(len(template) - 1)])$/;"	v	access:public
+counts	2021/day8.py	/^    counts = {n: 0 for n in range(2, 8)}$/;"	v	access:public
+create_graph	2020/day7.py	/^def create_graph(bag_rules):$/;"	f	access:public	signature:(bag_rules)
+create_pocket	2020/day17.py	/^def create_pocket(pocket_slice, ncycles, ndim=3):$/;"	f	access:public	signature:(pocket_slice, ncycles, ndim=3)
+create_regex	2020/day19.py	/^def create_regex(rules, ind):$/;"	f	access:public	signature:(rules, ind)
+cs	2021/day12.py	/^    cs = CaveSystem(connections_raw)$/;"	v	access:public
+csgraph	2020/day7.py	/^import scipy.sparse.csgraph as csgraph$/;"	I	access:public
+cup	2020/day23.py	/^        cup = cups[cup]$/;"	v	access:public
+cup	2020/day23.py	/^    cup = cups[1]$/;"	v	access:public
+cups	2020/day23.py	/^    cups = play_game(cups_init, n_moves=100)$/;"	v	access:public
+cups	2020/day23.py	/^    cups = play_game(cups_init, n_moves=int(1e7))$/;"	v	access:public
+cups_init	2020/day23.py	/^    cups_init = [3, 2, 7, 4, 6, 5, 1, 8, 9]$/;"	v	access:public
+cups_str	2020/day23.py	/^    cups_str = ""$/;"	v	access:public
+data	2021/day3.py	/^data = np.loadtxt('input_day3.txt', dtype=str)$/;"	v	access:public
+deck1	2020/day22.py	/^    deck1 = deck1_orig.copy()$/;"	v	access:public
+deck1_orig	2020/day22.py	/^    deck1_orig, deck2_orig = load_input(".\/input_day22.txt")$/;"	v	access:public
+deck2	2020/day22.py	/^    deck2 = deck2_orig.copy()$/;"	v	access:public
+deck2_orig	2020/day22.py	/^    deck1_orig, deck2_orig = load_input(".\/input_day22.txt")$/;"	v	access:public
+decode_digits	2021/day8.py	/^def decode_digits(segment_map, digits):$/;"	f	access:public	signature:(segment_map, digits)
+decode_seat	2020/day5.py	/^def decode_seat(seat):$/;"	f	access:public	signature:(seat)
+decoder	2021/day16.py	/^    decoder = Decoder(transmission)$/;"	v	access:public
+deduce_from_147	2021/day8.py	/^def deduce_from_147(digits):$/;"	f	access:public	signature:(digits)
+deduce_segment_map	2021/day8.py	/^def deduce_segment_map(digits):$/;"	f	access:public	signature:(digits)
+density	2021/day15.py	/^    density = parse_input('.\/input_day15.txt')$/;"	v	access:public
+depths	2021/day1.py	/^depths = np.loadtxt('input_day1.txt')$/;"	v	access:public
+diffs	2020/day10.py	/^diffs = np.diff(adapters)$/;"	v	access:public
+digit	2020/day18.py	/^    def digit(self):$/;"	m	class:BaseParser	access:public	signature:(self)
+dx	2020/day24.py	/^                dx = cardinal_coords[c]$/;"	v	access:public
+dx	2020/day24.py	/^            dx = cardinal_coords.get(c)$/;"	v	access:public
+dynamic	2021/day15.py	/^    def dynamic(self):$/;"	m	class:Pathfinder	access:public	signature:(self)
+entries	2020/day2.py	/^    entries = load_input()$/;"	v	access:public
+epsilon	2021/day3.py	/^epsilon = int(''.join(epsilon.astype(int).astype(str)), 2)$/;"	v	access:public
+epsilon	2021/day3.py	/^epsilon = ~gamma$/;"	v	access:public
+equilibrium_occupancy	2020/day11.py	/^def equilibrium_occupancy(seats, proximity_func, tol, max_iter=200):$/;"	f	access:public	signature:(seats, proximity_func, tol, max_iter=200)
+error_scores	2021/day10.py	/^    error_scores = {')': 3, ']': 57, '}': 1197, '>': 25137}$/;"	v	class:SyntaxChecker	access:public
+evaluate	2020/day18.py	/^    def evaluate(self, node=None):$/;"	m	class:Node	access:public	signature:(self, node=None)
+evaluator	2021/day16.py	/^    evaluator = Evaluator()$/;"	v	access:public
+execute	2020/day8.py	/^    def execute(self):$/;"	m	class:Interpreter	access:public	signature:(self)
+execute_pocket	2020/day17.py	/^def execute_pocket(pocket, inds, ncycles, ndim=3):$/;"	f	access:public	signature:(pocket, inds, ncycles, ndim=3)
+expect	2020/day18.py	/^    def expect(self, c):$/;"	m	class:BaseParser	access:public	signature:(self, c)
+explore	2021/day12.py	/^    def explore(self, part=1):$/;"	m	class:CaveSystem	access:public	signature:(self, part=1)
+expressions	2020/day18.py	/^    expressions = load_input(".\/input_day18.txt")$/;"	v	access:public
+extend_operator	2021/day16.py	/^def extend_operator(op):$/;"	f	access:public	signature:(op)
+fac	2020/day10.py	/^        fac = np.sum([binom(nfree, i) for i in [0, 1, 2]])$/;"	v	access:public
+field_names	2020/day16.py	/^    field_names = np.array(list(rules.keys()))$/;"	v	access:public
+field_order	2020/day16.py	/^    field_order = field_names[ifields[iunsort]]$/;"	v	access:public
+find_pair_sum	2020/day1.py	/^def find_pair_sum(arr, target):$/;"	f	access:public	signature:(arr, target)
+find_pair_sum	2020/day9.py	/^def find_pair_sum(arr, target):$/;"	f	access:public	signature:(arr, target)
+find_triplet_sum	2020/day1.py	/^def find_triplet_sum(arr, target):$/;"	f	access:public	signature:(arr, target)
+find_water_roughness	2020/day20.py	/^def find_water_roughness(image):$/;"	f	access:public	signature:(image)
+flip	2020/day24.py	/^        flip = {}$/;"	v	access:public
+fold	2021/day13.py	/^def fold(paper, along):$/;"	f	access:public	signature:(paper, along)
+foods	2020/day21.py	/^    foods, foods_allergens = parse_input(".\/input_day21.txt")$/;"	v	access:public
+foods_allergens	2020/day21.py	/^    foods, foods_allergens = parse_input(".\/input_day21.txt")$/;"	v	access:public
+from_expression	2021/day18.py	/^    def from_expression(cls, expression):$/;"	m	class:SnailNumber	access:public	signature:(cls, expression)
+fromstring_2d	2021/day4.py	/^def fromstring_2d(arr_str, sep, dtype=float):$/;"	f	access:public	signature:(arr_str, sep, dtype=float)
+g	2020/day7.py	/^    g = create_graph(bag_rules)$/;"	v	access:public
+gamma	2021/day3.py	/^gamma = int(''.join(gamma.astype(int).astype(str)), 2)$/;"	v	access:public
+gamma	2021/day3.py	/^gamma = np.sum(bits, axis=0) > 0.5*bits.shape[0]$/;"	v	access:public
+get_all_borders	2020/day20.py	/^def get_all_borders(tiles):$/;"	f	access:public	signature:(tiles)
+get_invalid_fields	2020/day16.py	/^def get_invalid_fields(rules, ticket):$/;"	f	access:public	signature:(rules, ticket)
+get_loop_size	2020/day25.py	/^def get_loop_size(key_target):$/;"	f	access:public	signature:(key_target)
+get_neighbors	2021/day11.py	/^    def get_neighbors(self, i, j):$/;"	m	class:OctopusGrid	access:public	signature:(self, i, j)
+get_neighbors	2021/day9.py	/^    def get_neighbors(self, i, j):$/;"	m	class:BasinFinder	access:public	signature:(self, i, j)
+get_occupations	2021/day6.py	/^def get_occupations(states):$/;"	f	access:public	signature:(states)
+get_sizes	2021/day9.py	/^    def get_sizes(self):$/;"	m	class:BasinFinder	access:public	signature:(self)
+grid	2021/day11.py	/^    grid = parse_input()$/;"	v	access:public
+grid	2021/day11_alt.py	/^    grid = parse_input('.\/test.txt')$/;"	v	access:public
+group	2020/day10.py	/^        group = list(group)$/;"	v	access:public
+has_won	2021/day4.py	/^    has_won = []$/;"	v	access:public
+heights	2021/day9.py	/^    heights = parse_input()$/;"	v	access:public
+hit	2021/day17.py	/^            hit = check_hit([v_x, v_y], box, num_steps=300)$/;"	v	access:public
+hit	2021/day17.py	/^        hit = check_hit([6, v_y], box, num_steps=30)$/;"	v	access:public
+i_X	2020/day14.py	/^            i_X = [i for i in range(nmask) if mask[i] == "X"]$/;"	v	access:public
+i_inv	2020/day9.py	/^            i_inv = i$/;"	v	access:public
+ifields	2020/day16.py	/^    ifields = np.argwhere(matches_sort.T == 1)[:, 1]$/;"	v	access:public
+ihit	2020/day9.py	/^                ihit = istart[isum[0]]$/;"	v	access:public
+image	2020/day20.py	/^    image = build_image(tiles, tiles_ordered, binary=True)$/;"	v	access:public
+imin	2020/day13.py	/^        imin = np.argmin(t_wait)$/;"	v	access:public
+in_bound1	2020/day16.py	/^            in_bound1 = np.logical_and(bounds[0, 0] <= col, col <= bounds[0, 1])$/;"	v	access:public
+in_bound2	2020/day16.py	/^            in_bound2 = np.logical_and(bounds[1, 0] <= col, col <= bounds[1, 1])$/;"	v	access:public
+ind	2020/day5.py	/^    ind = np.where(np.diff(sids) == 2)[0][0]$/;"	v	access:public
+inds	2020/day17.py	/^    pocket, inds = create_pocket(pocket_slice, ncycles, ndim=ndim)$/;"	v	access:public
+inert	2020/day21.py	/^    inert = ingredients$/;"	v	access:public
+ingredients	2020/day21.py	/^    ingredients = set.union(*foods)$/;"	v	access:public
+ingrs	2020/day21.py	/^        ingrs = matches[aller] - inert$/;"	v	access:public
+input_file	2020/day3.py	/^    input_file = "input_day3.txt"$/;"	v	access:public
+inputs	2021/day8.py	/^    inputs, outputs = parse_input()$/;"	v	access:public
+ins	2021/day14.py	/^                ins = insertions[pair]$/;"	v	access:public
+insertions	2021/day14.py	/^    template, insertions = parse_input('.\/input_day14.txt')$/;"	v	access:public
+instructions	2020/day14.py	/^    instructions = parse_input(".\/input_day14.txt")$/;"	v	access:public
+instructions	2021/day13.py	/^    coords, instructions = parse_input('.\/input_day13.txt')$/;"	v	access:public
+interp	2020/day8.py	/^    interp = Interpreter()$/;"	v	access:public
+inv	2020/day9.py	/^            inv = arr[i]$/;"	v	access:public
+invalid_fields	2020/day16.py	/^        invalid_fields = get_invalid_fields(rules, ticket)$/;"	v	access:public
+is_winner	2021/day4.py	/^    def is_winner(self):$/;"	m	class:Board	access:public	signature:(self)
+isort	2020/day16.py	/^    isort = np.argsort(matches.sum(axis=0))$/;"	v	access:public
+istart	2020/day9.py	/^            istart = np.arange(ioff, len(arr) + 1, ncont)$/;"	v	access:public
+isum	2020/day9.py	/^            isum = np.where(sums == inv)[0]$/;"	v	access:public
+it_cardinals	2020/day24.py	/^        it_cardinals = iter(cardinals)$/;"	v	access:public
+iunsort	2020/day16.py	/^    iunsort = isort.argsort()$/;"	v	access:public
+j	2021/day3.py	/^    j = 0$/;"	v	access:public
+jmp	2020/day8.py	/^    def jmp(self, num):$/;"	m	class:Interpreter	access:public	signature:(self, num)
+key_card	2020/day25.py	/^    key_card = 1717001$/;"	v	access:public
+key_door	2020/day25.py	/^    key_door = 523731$/;"	v	access:public
+key_encrypt1	2020/day25.py	/^    key_encrypt1 = transform(loop_size_card, key_door)$/;"	v	access:public
+key_encrypt2	2020/day25.py	/^    key_encrypt2 = transform(loop_size_door, key_card)$/;"	v	access:public
+label_neighbors	2021/day9.py	/^    def label_neighbors(self, i, j):$/;"	m	class:BasinFinder	access:public	signature:(self, i, j)
+last	2020/day18.py	/^    def last(self):$/;"	m	class:AdvancedParser	access:public	signature:(self)
+last	2020/day18.py	/^    def last(self):$/;"	m	class:BaseParser	access:public	signature:(self)
+last	2020/day18.py	/^    def last(self):$/;"	m	class:SimpleParser	access:public	signature:(self)
+lexer	2020/day18.py	/^def lexer(s):$/;"	f	access:public	signature:(s)
+line_of_sight	2020/day11.py	/^def line_of_sight(seats, i, j):$/;"	f	access:public	signature:(seats, i, j)
+lines	2021/day10.py	/^    lines = parse_input()$/;"	v	access:public
+load_input	2020/day13.py	/^def load_input(input_file):$/;"	f	access:public	signature:(input_file)
+load_input	2020/day18.py	/^def load_input(input_file):$/;"	f	access:public	signature:(input_file)
+load_input	2020/day2.py	/^def load_input(input_file="input_day2.txt"):$/;"	f	access:public	signature:(input_file="input_day2.txt")
+load_input	2020/day22.py	/^def load_input(input_file):$/;"	f	access:public	signature:(input_file)
+load_input	2020/day24.py	/^def load_input(input_file):$/;"	f	access:public	signature:(input_file)
+load_input	2020/day6.py	/^def load_input(input_file='.\/input_day6.txt'):$/;"	f	access:public	signature:(input_file='./input_day6.txt')
+load_instructions	2020/day12.py	/^    def load_instructions(self, input_file):$/;"	m	class:Ship	access:public	signature:(self, input_file)
+load_instructions	2020/day8.py	/^    def load_instructions(self, input_file):$/;"	m	class:Interpreter	access:public	signature:(self, input_file)
+load_seamonster	2020/day20.py	/^def load_seamonster(input_file='.\/seamonster.txt'):$/;"	f	access:public	signature:(input_file='./seamonster.txt')
+loop_size_card	2020/day25.py	/^    loop_size_card = get_loop_size(key_card)$/;"	v	access:public
+loop_size_door	2020/day25.py	/^    loop_size_door = get_loop_size(key_door)$/;"	v	access:public
+mark	2021/day4.py	/^    def mark(self, num):$/;"	m	class:Board	access:public	signature:(self, num)
+mask	2020/day14.py	/^            mask = inst$/;"	v	access:public
+mask	2021/day3.py	/^        mask = op(np.sum(bits_sel, axis=0), 0.5*bits_sel.shape[0])$/;"	v	access:public
+mask_and	2020/day14.py	/^            mask_and = int($/;"	v	access:public
+mask_or	2020/day14.py	/^            mask_or = int(inst.replace("X", "0"), 2)$/;"	v	access:public
+mask_or	2020/day14.py	/^            mask_or = int(mask.replace("X", "0"), 2)$/;"	v	access:public
+match	2020/day19.py	/^        match = attempt_match(mess, reg31, reg42)$/;"	v	access:public
+matches	2020/day16.py	/^    matches = np.zeros((num_fields, num_fields), dtype=np.int64)$/;"	v	access:public
+matches	2020/day21.py	/^    matches = {}$/;"	v	access:public
+matches_sort	2020/day16.py	/^    matches_sort = matches[:, isort]$/;"	v	access:public
+matches_sort	2020/day16.py	/^    matches_sort = np.hstack((matches_sort[:, 0][:, None], np.diff(matches_sort)))$/;"	v	access:public
+mem	2020/day14.py	/^    mem = {}$/;"	v	access:public
+messages	2020/day19.py	/^    rules, messages = parse_input('.\/input_day19.txt')$/;"	v	access:public
+most_common_elems	2021/day14.py	/^        most_common_elems = {e: 0 for e in ''.join(counter.keys())}$/;"	v	access:public
+most_common_pairs	2021/day14.py	/^        most_common_pairs = filter(None, counter.most_common())$/;"	v	access:public
+move	2020/day12.py	/^    def move(self, pos, dist, orientation=None):$/;"	m	class:Ship	access:public	signature:(self, pos, dist, orientation=None)
+move_to_waypoint	2020/day12.py	/^    def move_to_waypoint(self, num):$/;"	m	class:Ship	access:public	signature:(self, num)
+my_sid	2020/day5.py	/^    my_sid = sids[ind] + 1$/;"	v	access:public
+my_ticket	2020/day16.py	/^    rules, my_ticket, nearby_tickets = parse_input(".\/input_day16.txt")$/;"	v	access:public
+n_days	2020/day24.py	/^    n_days = 100$/;"	v	access:public
+navigate_solo	2020/day12.py	/^    def navigate_solo(self):$/;"	m	class:Ship	access:public	signature:(self)
+navigate_waypoint	2020/day12.py	/^    def navigate_waypoint(self):$/;"	m	class:Ship	access:public	signature:(self)
+ncont	2020/day9.py	/^    ncont = 2$/;"	v	access:public
+ncycles	2020/day17.py	/^    ncycles = 6$/;"	v	access:public
+ndim	2020/day17.py	/^    ndim = 3   # Part I$/;"	v	access:public
+ndim	2020/day17.py	/^    ndim = 4  # Part II$/;"	v	access:public
+nearby_tickets	2020/day16.py	/^    rules, my_ticket, nearby_tickets = parse_input(".\/input_day16.txt")$/;"	v	access:public
+neighborhood	2020/day11.py	/^def neighborhood(seats, i, j):$/;"	f	access:public	signature:(seats, i, j)
+new	2021/day1.py	/^    new = np.sum(depths[i:i + win_size])$/;"	v	access:public
+new_addr	2020/day14.py	/^                new_addr = int("".join(addr_pad), 2)$/;"	v	access:public
+nfoods	2020/day21.py	/^    nfoods = len(foods)$/;"	v	access:public
+nfree	2020/day10.py	/^        nfree = len(group) - 1$/;"	v	access:public
+nmask	2020/day14.py	/^    nmask = 36$/;"	v	access:public
+nop	2020/day8.py	/^    def nop(self, num):$/;"	m	class:Interpreter	access:public	signature:(self, num)
+norm_manhattan	2020/day12.py	/^    def norm_manhattan(self):$/;"	m	class:Ship	access:public	signature:(self)
+np	2020/day1.py	/^    import numpy as np$/;"	I	access:public
+np	2020/day10.py	/^import numpy as np$/;"	I	access:public
+np	2020/day11.py	/^import numpy as np$/;"	I	access:public
+np	2020/day12.py	/^import numpy as np$/;"	I	access:public
+np	2020/day13.py	/^import numpy as np$/;"	I	access:public
+np	2020/day14.py	/^import numpy as np$/;"	I	access:public
+np	2020/day16.py	/^import numpy as np$/;"	I	access:public
+np	2020/day17.py	/^import numpy as np$/;"	I	access:public
+np	2020/day20.py	/^import numpy as np$/;"	I	access:public
+np	2020/day24.py	/^import numpy as np$/;"	I	access:public
+np	2020/day3.py	/^import numpy as np$/;"	I	access:public
+np	2020/day5.py	/^import numpy as np$/;"	I	access:public
+np	2020/day7.py	/^import numpy as np$/;"	I	access:public
+np	2020/day9.py	/^import numpy as np$/;"	I	access:public
+np	2021/day1.py	/^import numpy as np$/;"	I	access:public
+np	2021/day11.py	/^import numpy as np$/;"	I	access:public
+np	2021/day11_alt.py	/^import numpy as np$/;"	I	access:public
+np	2021/day12.py	/^import numpy as np$/;"	I	access:public
+np	2021/day13.py	/^import numpy as np$/;"	I	access:public
+np	2021/day15.py	/^import numpy as np$/;"	I	access:public
+np	2021/day17.py	/^import numpy as np$/;"	I	access:public
+np	2021/day3.py	/^import numpy as np$/;"	I	access:public
+np	2021/day4.py	/^import numpy as np$/;"	I	access:public
+np	2021/day7.py	/^import numpy as np$/;"	I	access:public
+np	2021/day9.py	/^import numpy as np$/;"	I	access:public
+nperms	2020/day10.py	/^nperms = 1$/;"	v	access:public
+npre	2020/day9.py	/^    npre = 25$/;"	v	access:public
+num	2021/day4.py	/^        num = next(bingo_seq)$/;"	v	access:public
+num1	2020/day1.py	/^    num1, num2 = find_pair_sum(arr, 2020)$/;"	v	access:public
+num1	2020/day1.py	/^    num1, num2, num3 = find_triplet_sum(arr, 2020)$/;"	v	access:public
+num2	2020/day1.py	/^    num1, num2 = find_pair_sum(arr, 2020)$/;"	v	access:public
+num2	2020/day1.py	/^    num1, num2, num3 = find_triplet_sum(arr, 2020)$/;"	v	access:public
+num3	2020/day1.py	/^    num1, num2, num3 = find_triplet_sum(arr, 2020)$/;"	v	access:public
+num_X	2020/day14.py	/^            num_X = len(i_X)$/;"	v	access:public
+num_fields	2020/day16.py	/^    num_fields = valid_tickets.shape[1]$/;"	v	access:public
+num_step	2021/day11.py	/^    num_step = 0$/;"	v	access:public
+number	2021/day8.py	/^        number = decode_digits(segment_map, outputs[i])$/;"	v	access:public
+occ	2020/day11.py	/^    occ = equilibrium_occupancy(seats, line_of_sight, 5)$/;"	v	access:public
+occ	2020/day11.py	/^    occ = equilibrium_occupancy(seats, neighborhood, 4)$/;"	v	access:public
+occupancy	2020/day11.py	/^def occupancy(seats):$/;"	f	access:public	signature:(seats)
+occupations	2021/day6.py	/^    occupations = get_occupations(states)$/;"	v	access:public
+og	2021/day11.py	/^    og = OctopusGrid(grid)$/;"	v	access:public
+og	2021/day11.py	/^    og = OctopusGrid(grid.copy())$/;"	v	access:public
+og	2021/day11_alt.py	/^    og = OctopusGrid(grid.copy())$/;"	v	access:public
+old	2021/day1.py	/^    old = new$/;"	v	access:public
+old	2021/day1.py	/^old = int(1e10)$/;"	v	access:public
+operators	2020/day18.py	/^    operators = {"+": operator.add, "*": operator.mul}$/;"	v	class:Node	access:public
+order_tiles	2020/day20.py	/^def order_tiles(tiles):$/;"	f	access:public	signature:(tiles)
+orient_tiles	2020/day20.py	/^def orient_tiles(tiles, tiles_ordered):$/;"	f	access:public	signature:(tiles, tiles_ordered)
+outputs	2021/day8.py	/^    inputs, outputs = parse_input()$/;"	v	access:public
+packet	2021/day16.py	/^    packet = decoder.parse_packet()$/;"	v	access:public
+pairs	2021/day10.py	/^    pairs = {'<': '>', '[': ']', '{': '}', '(': ')'}$/;"	v	class:SyntaxChecker	access:public
+paper	2021/day13.py	/^        paper = fold(paper, along=instr)$/;"	v	access:public
+paper	2021/day13.py	/^    paper = np.zeros((np.max(coords[:, 1]) + 1, np.max(coords[:, 0]) + 1), dtype=bool) $/;"	v	access:public
+paper_folded	2021/day13.py	/^    paper_folded = fold(paper, along=instructions[0])$/;"	v	access:public
+parse	2020/day18.py	/^    def parse(self, s):$/;"	m	class:BaseParser	access:public	signature:(self, s)
+parse_header	2021/day16.py	/^    def parse_header(self):$/;"	m	class:Decoder	access:public	signature:(self)
+parse_input	2020/day11.py	/^def parse_input(input_file="input_day11.py"):$/;"	f	access:public	signature:(input_file="input_day11.py")
+parse_input	2020/day14.py	/^def parse_input(input_file):$/;"	f	access:public	signature:(input_file)
+parse_input	2020/day16.py	/^def parse_input(input_file):$/;"	f	access:public	signature:(input_file)
+parse_input	2020/day17.py	/^def parse_input(input_file):$/;"	f	access:public	signature:(input_file)
+parse_input	2020/day19.py	/^def parse_input(input_file):$/;"	f	access:public	signature:(input_file)
+parse_input	2020/day20.py	/^def parse_input(input_file):$/;"	f	access:public	signature:(input_file)
+parse_input	2020/day21.py	/^def parse_input(input_file):$/;"	f	access:public	signature:(input_file)
+parse_input	2020/day5.py	/^def parse_input(input_file='input_day5.txt'):$/;"	f	access:public	signature:(input_file='input_day5.txt')
+parse_input	2020/day7.py	/^def parse_input(input_file='.\/input_day7.txt'):$/;"	f	access:public	signature:(input_file='./input_day7.txt')
+parse_input	2021/day10.py	/^def parse_input(file_path='.\/input_day10.txt'):$/;"	f	access:public	signature:(file_path='./input_day10.txt')
+parse_input	2021/day11.py	/^def parse_input(file_path=".\/input_day11.txt"):$/;"	f	access:public	signature:(file_path="./input_day11.txt")
+parse_input	2021/day11_alt.py	/^def parse_input(file_path=".\/input_day11.txt"):$/;"	f	access:public	signature:(file_path="./input_day11.txt")
+parse_input	2021/day12.py	/^def parse_input(file_path=".\/input_day12.txt"):$/;"	f	access:public	signature:(file_path="./input_day12.txt")
+parse_input	2021/day13.py	/^def parse_input(file_path): $/;"	f	access:public	signature:(file_path)
+parse_input	2021/day14.py	/^def parse_input(file_path): $/;"	f	access:public	signature:(file_path)
+parse_input	2021/day15.py	/^def parse_input(file_path):$/;"	f	access:public	signature:(file_path)
+parse_input	2021/day16.py	/^def parse_input(file_path):$/;"	f	access:public	signature:(file_path)
+parse_input	2021/day4.py	/^def parse_input(file_path=".\/input_day4.txt"):$/;"	f	access:public	signature:(file_path="./input_day4.txt")
+parse_input	2021/day6.py	/^def parse_input(file_path='.\/input_day6.txt'):$/;"	f	access:public	signature:(file_path='./input_day6.txt')
+parse_input	2021/day8.py	/^def parse_input(file_path='.\/input_day8.txt'):$/;"	f	access:public	signature:(file_path='./input_day8.txt')
+parse_input	2021/day9.py	/^def parse_input(file_path=".\/input_day9.txt"):$/;"	f	access:public	signature:(file_path="./input_day9.txt")
+parse_len_type_id	2021/day16.py	/^    def parse_len_type_id(self):$/;"	m	class:Decoder	access:public	signature:(self)
+parse_literal	2021/day16.py	/^    def parse_literal(self):$/;"	m	class:Decoder	access:public	signature:(self)
+parse_packet	2021/day16.py	/^    def parse_packet(self):$/;"	m	class:Decoder	access:public	signature:(self)
+parse_policy	2020/day2.py	/^def parse_policy(policy):$/;"	f	access:public	signature:(policy)
+parse_sub_length	2021/day16.py	/^    def parse_sub_length(self):$/;"	m	class:Decoder	access:public	signature:(self)
+parse_sub_number	2021/day16.py	/^    def parse_sub_number(self):$/;"	m	class:Decoder	access:public	signature:(self)
+parser	2020/day18.py	/^    parser = AdvancedParser()$/;"	v	access:public
+parser	2020/day18.py	/^    parser = SimpleParser()$/;"	v	access:public
+period	2020/day13.py	/^        period = period * busses[i] # not needed \/\/ np.gcd(period, busses[i])$/;"	v	access:public
+period	2020/day13.py	/^    period = busses[0]$/;"	v	access:public
+pf	2021/day15.py	/^    pf = Pathfinder(density)$/;"	v	access:public
+play	2020/day15.py	/^def play(starting, max_turn):$/;"	f	access:public	signature:(starting, max_turn)
+play_game	2020/day23.py	/^def play_game(cups_init, n_moves):$/;"	f	access:public	signature:(cups_init, n_moves)
+play_recurisve_combat	2020/day22.py	/^def play_recurisve_combat(deck1, deck2):$/;"	f	access:public	signature:(deck1, deck2)
+play_regular_combat	2020/day22.py	/^def play_regular_combat(deck1, deck2):$/;"	f	access:public	signature:(deck1, deck2)
+plt	2021/day17.py	/^import matplotlib.pyplot as plt$/;"	I	access:public
+pocket	2020/day17.py	/^    pocket, inds = create_pocket(pocket_slice, ncycles, ndim=ndim)$/;"	v	access:public
+pocket_slice	2020/day17.py	/^    pocket_slice = parse_input(".\/input_day17.txt")$/;"	v	access:public
+possible_ingredients	2020/day21.py	/^        possible_ingredients = set.intersection($/;"	v	access:public
+print_seats	2020/day11.py	/^def print_seats(seats):$/;"	f	access:public	signature:(seats)
+prod	2020/day16.py	/^    prod = 1$/;"	v	access:public
+prod	2021/day16.py	/^def prod(numbers):$/;"	f	access:public	signature:(numbers)
+propagate	2021/day6.py	/^def propagate(occupations, num_days):$/;"	f	access:public	signature:(occupations, num_days)
+ratings	2021/day3.py	/^ratings = []$/;"	v	access:public
+read_bits	2021/day16.py	/^    def read_bits(self, num):$/;"	m	class:Decoder	access:public	signature:(self, num)
+reg31	2020/day19.py	/^    reg31 = create_regex(rules, 31) $/;"	v	access:public
+reg42	2020/day19.py	/^    reg42 = create_regex(rules, 42)$/;"	v	access:public
+regex	2020/day19.py	/^    regex = create_regex(rules, 0)$/;"	v	access:public
+renovation_list	2020/day24.py	/^    renovation_list = load_input(".\/input_day24.txt")$/;"	v	access:public
+res	2020/day13.py	/^        res = 0$/;"	v	access:public
+res	2020/day13.py	/^        res = busses[imin] * t_wait[imin]$/;"	v	access:public
+res	2020/day18.py	/^    res = 0$/;"	v	access:public
+res	2021/day16.py	/^    res = evaluator(packet)$/;"	v	access:public
+res	2021/day7.py	/^    res = minimize_scalar(cost1, bounds=bounds, args=(x_crabs))$/;"	v	access:public
+res	2021/day7.py	/^    res = minimize_scalar(cost2, bounds=bounds, args=(x_crabs))$/;"	v	access:public
+reset	2020/day12.py	/^    def reset(self):$/;"	m	class:Ship	access:public	signature:(self)
+reset	2020/day8.py	/^    def reset(self):$/;"	m	class:Interpreter	access:public	signature:(self)
+risks	2021/day15.py	/^    risks = pf.dynamic()$/;"	v	access:public
+rotate_waypoint	2020/day12.py	/^    def rotate_waypoint(self, hand, deg):$/;"	m	class:Ship	access:public	signature:(self, hand, deg)
+rule	2020/day8.py	/^    def rule(inst):$/;"	f	access:public	signature:(inst)
+rules	2020/day16.py	/^    rules, my_ticket, nearby_tickets = parse_input(".\/input_day16.txt")$/;"	v	access:public
+rules	2020/day19.py	/^    rules, messages = parse_input('.\/input_day19.txt')$/;"	v	access:public
+run	2021/day11.py	/^    def run(self, num_steps):$/;"	m	class:OctopusGrid	access:public	signature:(self, num_steps)
+run	2021/day9.py	/^    def run(self):$/;"	m	class:BasinFinder	access:public	signature:(self)
+runs	2020/day13.py	/^    runs = t_depart \/\/ busses$/;"	v	access:public
+score	2021/day4.py	/^    def score(self, num_called):$/;"	m	class:Board	access:public	signature:(self, num_called)
+score_autocompletion	2021/day10.py	/^    def score_autocompletion(self, lines):$/;"	m	class:SyntaxChecker	access:public	signature:(self, lines)
+score_corrupted_lines	2021/day10.py	/^    def score_corrupted_lines(self, lines):$/;"	m	class:SyntaxChecker	access:public	signature:(self, lines)
+seats	2020/day11.py	/^    seats = parse_input()$/;"	v	access:public
+seats	2020/day5.py	/^    seats = parse_input()$/;"	v	access:public
+segment_map	2021/day8.py	/^        segment_map = deduce_segment_map(digits)$/;"	v	access:public
+seq	2020/day9.py	/^                seq = arr[ihit:ihit+ncont]$/;"	v	access:public
+ship	2020/day12.py	/^    ship = Ship()$/;"	v	access:public
+should_flash	2021/day11.py	/^    def should_flash(self, i, j):$/;"	m	class:OctopusGrid	access:public	signature:(self, i, j)
+sids	2020/day5.py	/^    sids = np.array([decode_seat(s) for s in seats])$/;"	v	access:public
+sids	2020/day5.py	/^    sids = np.sort(sids)$/;"	v	access:public
+size	2021/day11.py	/^    def size(self):$/;"	m	class:OctopusGrid	access:public	signature:(self)
+size	2021/day11_alt.py	/^    def size(self):$/;"	m	class:OctopusGrid	access:public	signature:(self)
+sizes	2021/day9.py	/^    sizes = basin_finder.get_sizes()$/;"	v	access:public
+slopes	2020/day3.py	/^    slopes = np.array([[1, 1], [3, 1], [5, 1], [7, 1], [1, 2]])$/;"	v	access:public
+slopes	2020/day3.py	/^    slopes = np.array([[3, 1]])$/;"	v	access:public
+spoken	2020/day15.py	/^    spoken = play(starting, max_turn=2020)$/;"	v	access:public
+spoken	2020/day15.py	/^    spoken = play(starting, max_turn=30000000)$/;"	v	access:public
+starting	2020/day15.py	/^    starting = [9, 6, 0, 10, 18, 2, 1]$/;"	v	access:public
+states	2021/day6.py	/^    states = parse_input('.\/input_day6.txt')$/;"	v	access:public
+step	2021/day11.py	/^    def step(self, num=1):$/;"	m	class:OctopusGrid	access:public	signature:(self, num=1)
+step	2021/day11_alt.py	/^    def step(self, num=1):$/;"	m	class:OctopusGrid	access:public	signature:(self, num=1)
+substitute	2020/day8.py	/^    def substitute(self, at_index, rule):$/;"	m	class:Interpreter	access:public	signature:(self, at_index, rule)
+success	2020/day8.py	/^        success = interp.execute()$/;"	v	access:public
+sum_numbers	2021/day8.py	/^    sum_numbers = 0$/;"	v	access:public
+sum_versions	2021/day16.py	/^def sum_versions(packet):$/;"	f	access:public	signature:(packet)
+sums	2020/day9.py	/^            sums = np.array($/;"	v	access:public
+t	2020/day13.py	/^    t = busses[0] + t_diffs[0]$/;"	v	access:public
+t_depart	2020/day13.py	/^    t_depart, t_schedule = load_input(".\/input_day13.txt")$/;"	v	access:public
+t_diffs	2020/day13.py	/^    t_diffs = np.array([i for i, t in enumerate(t_schedule) if t != "x"])$/;"	v	access:public
+t_schedule	2020/day13.py	/^    t_depart, t_schedule = load_input(".\/input_day13.txt")$/;"	v	access:public
+template	2021/day14.py	/^    template, insertions = parse_input('.\/input_day14.txt')$/;"	v	access:public
+term	2020/day18.py	/^    def term(self):$/;"	m	class:AdvancedParser	access:public	signature:(self)
+tile	2021/day15.py	/^    def tile(self, reps=(5, 5)):$/;"	m	class:Pathfinder	access:public	signature:(self, reps=(5, 5))
+tiles	2020/day20.py	/^    tiles = parse_input(".\/input_day20.txt")$/;"	v	access:public
+tiles	2020/day24.py	/^    tiles = {}$/;"	v	access:public
+tiles_ordered	2020/day20.py	/^    tiles_ordered = order_tiles(tiles)$/;"	v	access:public
+to_expression	2021/day18.py	/^    def to_expression(self):$/;"	m	class:SnailNumber	access:public	signature:(self)
+transform	2020/day25.py	/^def transform(loop_size, subject_number):$/;"	f	access:public	signature:(loop_size, subject_number)
+transmission	2021/day16.py	/^    transmission = parse_input('.\/input_day16.txt')$/;"	v	access:public
+tree	2020/day18.py	/^        tree = parser.parse(expr)$/;"	v	access:public
+turn	2020/day12.py	/^    def turn(self, hand, deg):$/;"	m	class:Ship	access:public	signature:(self, hand, deg)
+valid_tickets	2020/day16.py	/^    valid_tickets = []$/;"	v	access:public
+valid_tickets	2020/day16.py	/^    valid_tickets = np.array(valid_tickets)$/;"	v	access:public
+validate_advanced	2020/day4.py	/^def validate_advanced(input_file='input_day4.txt'):$/;"	f	access:public	signature:(input_file='input_day4.txt')
+validate_basic	2020/day4.py	/^def validate_basic(input_file='input_day4.txt'):$/;"	f	access:public	signature:(input_file='input_day4.txt')
+validate_official	2020/day2.py	/^def validate_official(entries):$/;"	f	access:public	signature:(entries)
+validate_sled	2020/day2.py	/^def validate_sled(entries):$/;"	f	access:public	signature:(entries)
+view	2021/day11.py	/^    def view(self):$/;"	m	class:OctopusGrid	access:public	signature:(self)
+view	2021/day11_alt.py	/^    def view(self):$/;"	m	class:OctopusGrid	access:public	signature:(self)
+visited	2020/day21.py	/^    visited = set()$/;"	v	access:public
+visualize	2021/day13.py	/^def visualize(paper):$/;"	f	access:public	signature:(paper)
+win_size	2021/day1.py	/^win_size = 3$/;"	v	access:public
+winner	2020/day22.py	/^    winner = play_recurisve_combat(deck1, deck2)$/;"	v	access:public
+winner	2020/day22.py	/^    winner = play_regular_combat(deck1, deck2)$/;"	v	access:public
+winner_scores	2021/day4.py	/^    winner_scores = []$/;"	v	access:public
+winning_deck	2020/day22.py	/^        winning_deck = deck2$/;"	v	access:public
+winning_deck	2020/day22.py	/^    winning_deck = deck1$/;"	v	access:public
+wrapper	2021/day16.py	/^    def wrapper(args):$/;"	f	function:extend_operator	file:	access:private	signature:(args)
+x	2020/day24.py	/^    x = np.zeros(2, dtype=np.int64)$/;"	v	access:public
+x_crabs	2021/day7.py	/^    x_crabs = np.loadtxt('.\/input_day7.txt', delimiter=',',  dtype=int)$/;"	v	access:public
+x_neighbors	2020/day24.py	/^                x_neighbors = [$/;"	v	access:public
+x_neighbors	2020/day24.py	/^            x_neighbors = [$/;"	v	access:public
+x_t	2020/day24.py	/^        x_t = tuple(x)$/;"	v	access:public
