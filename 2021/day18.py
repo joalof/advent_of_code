@@ -2,7 +2,6 @@ import math
 import functools
 import operator
 import itertools
-import ast
 
 
 def parse_input(file_path):
@@ -51,7 +50,6 @@ class SnailNumber:
         return f'Numbers: {self.numbers}\nLevels: {self.levels}'
 
     def explode(self, i):
-        """Explodes pair starting at regular number i. """
         numbers = self.numbers
         levels = self.levels
         if i > 0:
@@ -64,7 +62,6 @@ class SnailNumber:
         levels.pop(i + 1)
 
     def split(self, i):
-        """Splits pair at regular number i. """
         numbers = self.numbers
         levels = self.levels
         num, level = numbers[i], levels[i]
@@ -94,92 +91,50 @@ class SnailNumber:
                 else:
                     return
 
-    # def reduced_to_list(self):
-    #     """Transforms a reduced number to list format. """
-    #     if len(self.numbers) == 1:
-    #         return self.numbers
-    #     pairs = []
-    #     for i in range(len(self.numbers)//2):
-    #         pairs.append(self.numbers[2*i:2*(i + 1)])
-    #     level_last = self.levels[0]
-    #     expression = '[' * level_last
-    #     expression += f'{pairs[0][0]},{pairs[0][1]}'
-    #     consecutive = 0
-    #     for i, pair in enumerate(pairs[1:]):
-    #         level = self.levels[(i + 1)*2] 
-    #         diff = level - level_last
-    #         if diff == 0:
-    #             consecutive += 1
-    #             if consecutive == 2:
-    #                 consecutive = 0
-    #                 expression += ']],[['
-    #             else: 
-    #                 expression += '],['
-    #         elif diff > 0:
-    #             expression += '],[' + '['*diff
-    #         elif diff < 0:
-    #             expression += ']'*abs(diff) + '],['
-
-    #         expression += f'{pair[0]},{pair[1]}'
-    #         level_last = level
-    #     expression += ']'*level_last
-    #     snail_list = ast.literal_eval(expression)
-    #     return snail_list
-
-    # def to_list_tmp(self):
-    #     """Transforms a reduced number to list format. """
-    #     if len(self.numbers) == 1:
-    #         return self.numbers
-    #     pairs = []
-    #     for i in range(len(self.numbers)//2):
-    #         pairs.append(self.numbers[2*i:2*(i + 1)])
-    #     pairs = functools.reduce(self.join, pairs)
-    #     return pairs
-
-    # def join(self, left, right):
-    #     return [left, right]
-
-    # def magnitude(self):
-    #     if len(self.numbers) == 1:
-    #         return self.numbers[0]
-    #     else:
-    #         snail_list = self.reduced_to_list()
-    #         left = SnailNumber(str(snail_list[0]))
-    #         right = SnailNumber(str(snail_list[1]))
-    #         mag = 3*left.magnitude() + 2*right.magnitude()
-    #     return mag
-
     def magnitude(self):
         levels = self.levels
         numbers = self.numbers
-        level_max = max(levels)
-        number_pairs = pair_up(numbers)
-        pairs_at_level = {}
-        for lev in range(level_max, -1, -1):
-            pairs_at_level[lev] = [
-                p for i, p in enumerate(number_pairs) if levels[i*2] == lev
-            ]
-        for lev in range(level_max, 0, -1):
-            pairs_at_level[lev] = [3*p[0] + 2*p[1] for p in pairs_at_level[lev]]
-            pairs_at_level[lev - 1] = pair_up(
-                pairs_at_level[lev]
-            ) + pairs_at_level[lev - 1]
-        return pairs_at_level[1][0]
+        for level_curr in range(max(levels), 0, -1):
+            numbers_new = []
+            levels_new = []
+            paired = False
+            for inds in itertools.pairwise(range(len(numbers))):
+                i, j = inds
+                if levels[i] == levels[j] == level_curr:
+                    if paired:
+                        paired = False
+                    else:
+                        res = 3*numbers[i] + 2*numbers[j]
+                        numbers_new.append(res)
+                        levels_new.append(levels[i] - 1)
+                        paired = True
+                else:
+                    if not paired:
+                        numbers_new.append(numbers[i])
+                        levels_new.append(levels[i])
+                    else:
+                        paired = False
+                    if j == len(numbers) - 1:
+                        numbers_new.append(numbers[j])
+                        levels_new.append(levels[j])
 
-def pair_up(iterable):
-    return [iterable[2*i:2*(i+1)] for i in range(len(iterable)//2)]
+            numbers = numbers_new
+            levels = levels_new
+        return numbers[0]
 
 
 if __name__ == "__main__":
-
-    lines = parse_input('./test.txt')
-    snail_numbers = [SnailNumber(expression) for expression in lines]
+    lines = parse_input('./input_day18.txt')
+    snail_numbers = [SnailNumber(expr) for expr in lines]
 
     # Part I
-    a = functools.reduce(operator.add, snail_numbers)
-    # print(a)
-    print(a.magnitude())
+    res = functools.reduce(operator.add, snail_numbers)
+    print(res.magnitude())
 
-    # sn = SnailNumber('[[[[5,0],[7,4]],[5,5]],[6,6]]')
-    # print(sn)
-    # print(sn.to_list_tmp())
+    # Part II
+    mag_max = 0
+    for a, b in itertools.permutations(snail_numbers, 2):
+        mag = (a + b).magnitude()
+        if mag > mag_max:
+            mag_max = mag
+    print(mag_max)
